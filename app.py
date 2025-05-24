@@ -65,7 +65,5 @@ if st.button("Check Strength"):
 st.markdown("---")
 if st.button("Generate Strong Password"):
     strong_pass = generate_strong_password()
-    st.text_input("Generated Password:", strong_pass, key="generated_pass")
-    if st.button("Copy to Clipboard"):
-        pyperclip.copy(strong_pass)
-        st.success("Copied to clipboard!")
+    st.text_input("Generated Password:", value=strong_pass, key="generated_pass", help="You can copy this manually.")
+    st.success("Password generated! Click the field above to copy it.")
