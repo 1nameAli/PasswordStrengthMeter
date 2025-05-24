@@ -1,7 +1,6 @@
 import re
 import random
 import string
-import pyperclip
 import streamlit as st
 
 # Streamlit page configuration
